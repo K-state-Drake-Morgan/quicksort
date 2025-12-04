@@ -2599,3 +2599,22 @@ Caused by: java.nio.file.NoSuchFileException: /home/drake/Code/Scala/quicksort/.
 2025.12.04 10:48:44 INFO  Shutting down server[0m
 2025.12.04 10:48:44 INFO  shutting down Metals[0m
 2025.12.04 10:48:44 INFO  Shut down connection with build server.[0m
+2025.12.04 11:04:40 INFO  Started: Metals version 1.6.4 in folders '/home/drake/Code/Scala/quicksort' for client Zed 0.215.3.[0m
+2025.12.04 11:04:40 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2025.12.04 11:04:40 INFO  no build target found for /home/drake/Code/Scala/quicksort/src/lib.sc. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.12.04 11:04:40 INFO  Attempting to connect to the build server...[0m
+2025.12.04 11:04:40 INFO  Running BSP server List(/home/drake/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/drake/Code/Scala/quicksort/.scala-build/ide-options-v2.json, --json-launcher-options, /home/drake/Code/Scala/quicksort/.scala-build/ide-launcher-options.json, --envs-file, /home/drake/Code/Scala/quicksort/.scala-build/ide-envs.json, /home/drake/Code/Scala/quicksort)[0m
+2025.12.04 11:04:40 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/drake/Code/Scala/quicksort/.metals/bsp.trace.json or /home/drake/.cache/metals/bsp.trace.json[0m
+2025.12.04 11:04:41 INFO  BSP server: Starting compilation server[0m
+2025.12.04 11:04:41 INFO  no build target found for /home/drake/Code/Scala/quicksort/src/lib.sc. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.12.04 11:04:42 INFO  time: Connected to build server in 1.95s[0m
+2025.12.04 11:04:42 INFO  Connected to Build server: scala-cli v1.10.1[0m
+2025.12.04 11:04:42 WARN  Unable to run doctor. Make sure `isHttpEnabled` is set to `true`.[0m
+2025.12.04 11:04:42 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.04 11:04:42 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk/src.zip, /usr/lib/jvm/java-21-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2025.12.04 11:04:43 INFO  time: indexed workspace in 0.97s[0m
+2025.12.04 11:04:44 INFO  time: compiled quicksort_d5c0a6989e in 1.81s[0m
+2025.12.04 11:04:44 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.04 11:04:44 INFO  time: compiled quicksort_d5c0a6989e in 0.44s[0m
+2025.12.04 11:04:44 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.04 11:04:44 INFO  time: compiled quicksort_d5c0a6989e in 0.27s[0m
