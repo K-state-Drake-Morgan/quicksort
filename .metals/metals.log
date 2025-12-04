@@ -2618,3 +2618,37 @@ Caused by: java.nio.file.NoSuchFileException: /home/drake/Code/Scala/quicksort/.
 2025.12.04 11:04:44 INFO  time: compiled quicksort_d5c0a6989e in 0.44s[0m
 2025.12.04 11:04:44 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
 2025.12.04 11:04:44 INFO  time: compiled quicksort_d5c0a6989e in 0.27s[0m
+2025.12.04 11:23:20 INFO  Shutting down server[0m
+2025.12.04 11:23:20 INFO  shutting down Metals[0m
+2025.12.04 11:23:20 INFO  Shut down connection with build server.[0m
+2025.12.04 11:43:10 INFO  Started: Metals version 1.6.4 in folders '/home/drake/Code/Scala/quicksort' for client Zed 0.215.3.[0m
+2025.12.04 11:43:10 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2025.12.04 11:43:10 INFO  no build target found for /home/drake/Code/Scala/quicksort/src/lib.sc. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.12.04 11:43:11 INFO  Attempting to connect to the build server...[0m
+2025.12.04 11:43:11 INFO  Running BSP server List(/home/drake/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/drake/Code/Scala/quicksort/.scala-build/ide-options-v2.json, --json-launcher-options, /home/drake/Code/Scala/quicksort/.scala-build/ide-launcher-options.json, --envs-file, /home/drake/Code/Scala/quicksort/.scala-build/ide-envs.json, /home/drake/Code/Scala/quicksort)[0m
+2025.12.04 11:43:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/drake/Code/Scala/quicksort/.metals/bsp.trace.json or /home/drake/.cache/metals/bsp.trace.json[0m
+2025.12.04 11:43:11 INFO  time: Connected to build server in 0.46s[0m
+2025.12.04 11:43:11 INFO  Connected to Build server: scala-cli v1.10.1[0m
+2025.12.04 11:43:11 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.04 11:43:13 INFO  time: compiled quicksort_d5c0a6989e in 1.36s[0m
+2025.12.04 11:43:13 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+Dec 04, 2025 11:43:13 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6
+2025.12.04 11:43:13 WARN  Unable to run doctor. Make sure `isHttpEnabled` is set to `true`.[0m
+2025.12.04 11:43:13 INFO  time: compiled quicksort_d5c0a6989e in 0.53s[0m
+2025.12.04 11:43:13 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.04 11:43:14 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk/src.zip, /usr/lib/jvm/java-21-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2025.12.04 11:43:14 INFO  time: indexed workspace in 2.22s[0m
+2025.12.04 11:43:13 INFO  Deduplicating compilation of quicksort_d5c0a6989e from bsp client 'scala-cli 1.10.1' (since 2.582s)[0m
+2025.12.04 11:43:13 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.04 11:43:13 INFO  time: compiled quicksort_d5c0a6989e in 51ms[0m
+2025.12.04 11:43:18 INFO  Selected port 5031[0m
+Dec 04, 2025 11:43:18 AM io.undertow.Undertow start
+INFO: starting server: Undertow - 2.3.12.Final
+Dec 04, 2025 11:43:18 AM org.xnio.Xnio <clinit>
+INFO: XNIO version 3.8.17.Final
+Dec 04, 2025 11:43:18 AM org.xnio.nio.NioXnio <clinit>
+INFO: XNIO NIO Implementation Version 3.8.17.Final
+Dec 04, 2025 11:43:18 AM org.jboss.threads.Version <clinit>
+INFO: JBoss Threads version 3.5.0.Final
+2025.12.04 11:43:18 INFO  Started Metals http server at http://127.0.0.1:5031[0m

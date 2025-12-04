@@ -25,7 +25,7 @@ def swap(nums: ZS, pos1: Z, pos2: Z): Unit = {
 }
 
 // stop is inclusive
-def quicksort(input: ZS, start: Z, stop: Z): Unit = {
+def quicksort_part(input: ZS, start: Z, stop: Z): Unit = {
   Contract(
     Requires(
       start >= 0,
@@ -35,7 +35,7 @@ def quicksort(input: ZS, start: Z, stop: Z): Unit = {
     ),
     Modifies(input),
     Ensures(
-      ∀(start + 1 to stop)(i __>: (input(i) > input(i - 1))),
+      ∀(start + 1 to stop)(i => (input(i) > input(i - 1))),
       input.size == In(input).size
     )
   )
@@ -46,8 +46,8 @@ def quicksort(input: ZS, start: Z, stop: Z): Unit = {
   }
 
   val pivot: Z = input(stop)
-  var index = start
-  var pointer = start
+  var index: Z = start
+  var pointer: Z = start
   while (pointer < stop) {
     Invariant(
       Modifies(
@@ -55,7 +55,7 @@ def quicksort(input: ZS, start: Z, stop: Z): Unit = {
         pointer,
         input
       ),
-      ∀(start until pointer)(i __>: (input(i) < pivot)),
+      ∀(start until pointer)(i => (input(i) < pivot)),
       index <= pointer,
       index >= 0,
       index < input.size,
@@ -63,17 +63,17 @@ def quicksort(input: ZS, start: Z, stop: Z): Unit = {
       pointer < input.size,
       input.size == In(input).size
     )
-    if (input[pointer] < pivot) {
+    if (input(pointer) < pivot) {
       swap(input, pointer, index)
-      index += 1
+      index = index + 1
     }
-    pointer += 1
+    pointer = pointer + 1
   }
 
-  swap(index, index, pointer)
+  swap(input, index, pointer)
 
-  quicksort(input, start, index)
-  quicksort(input, index + 1, stop)
+  quicksort_part(input, start, index)
+  quicksort_part(input, index + 1, stop)
 }
 
 def quicksort(input: ZS): Unit = {
@@ -82,7 +82,7 @@ def quicksort(input: ZS): Unit = {
       input
     ),
     Ensures(
-      ∀(0 until index.size)(i __>: (input(i) > input(i - 1))),
+      ∀(0 until input.size)(i => (input(i) > input(i - 1))),
       input.size == In(input).size
     )
   )
@@ -91,15 +91,15 @@ def quicksort(input: ZS): Unit = {
     return
   }
 
-  quicksort(input, 0, input.size - 1)
+  quicksort_part(input, 0, input.size - 1)
 }
 
 // ---TESTS---
 
 // empty
-var empty = Sequence()
+var empty = ZS()
 quicksort(empty)
-assert(empty, Sequence())
+assert(empty == ZS())
 
 // one element
 
