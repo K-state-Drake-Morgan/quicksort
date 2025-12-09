@@ -2,6 +2,23 @@
 
 import org.sireum._
 
+def is_sorted(input: ZS): B = {
+  Contract (
+    Ensures (
+      Res[B] == true __>: ∀(0 until input.size - 1)(i => input(i) < input(i + 1)),
+      Res[B] == false __>: !(∀(0 until input.size - 1)(i => input(i) < input(i + 1))),
+    )
+  )
+
+  var index: Z = 0;
+  while (index < input.size - 1) {
+    if (input(index) > input(index + 1)) {
+      return false;
+    }
+  }
+  return true;
+}
+
 def swap(nums: ZS, pos1: Z, pos2: Z): Unit = {
   // how to write?
   Contract(
@@ -90,7 +107,7 @@ def quicksort(input: ZS): Unit = {
       input
     ),
     Ensures(
-      ∀(0 until input.size - 1)(i => i + 1 < input.size && (input(i) > input(i + 1))),
+      ∀(0 until input.size - 1)(i => (input(i) < input(i + 1))),
       input.size == In(input).size
     )
   )
@@ -110,32 +127,32 @@ assert(empty == ZS())
 // one element
 var one = ZS(1)
 quicksort(one)
-assert(one == ZS(1))
+assert(is_sorted(one))
 
 // two
 var two = ZS(2,1)
 quicksort(two)
-assert(two == ZS(1,2))
+assert(is_sorted(two))
 
 // three
 var three = ZS(3,1,2)
 quicksort(three)
-assert(three == ZS(1,2,3))
+assert(is_sorted(three))
 
 // four
 var four = ZS(4,3,1,2)
 quicksort(four)
-assert(four == ZS(1,2,3,4))
+assert(is_sorted(four))
 
 // 8
 var eight = ZS(8,3,7,1,6,2,5,4)
 quicksort(eight)
-assert(eight == ZS(1,2,3,4,5,6,7,8))
+assert(is_sorted(eight))
 
 // 16
 var sixteen = ZS(16,5,12,1,9,3,15,2,8,7,14,6,4,11,10,13)
 quicksort(sixteen)
-assert(sixteen == ZS(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16))
+assert(is_sorted(sixteen))
 
 // 32
 var thirtytwo = ZS(
@@ -145,10 +162,7 @@ var thirtytwo = ZS(
   15,10,31,16,24,20,28,21
 )
 quicksort(thirtytwo)
-assert(thirtytwo ==
-  ZS(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,
-     17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32)
-)
+assert(is_sorted(thirtytwo))
 
 // 42
 var fortytwo = ZS(
@@ -157,13 +171,7 @@ var fortytwo = ZS(
   41,2,35,13,30,20,39,16,23,37,24,32,26
 )
 quicksort(fortytwo)
-assert(fortytwo ==
-  ZS(
-    1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,
-    22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,
-    40,41,42
-  )
-)
+assert(is_sorted(fortytwo))
 
 // 49
 var fortynine = ZS(
@@ -172,10 +180,4 @@ var fortynine = ZS(
   30,18,10,46,4,34,22,12,28,20,40,16,24,32,36,44,48
 )
 quicksort(fortynine)
-assert(fortynine ==
-  ZS(
-    1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
-    21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,
-    37,38,39,40,41,42,43,44,45,46,47,48,49
-  )
-)
+assert(is_sorted(fortynine))

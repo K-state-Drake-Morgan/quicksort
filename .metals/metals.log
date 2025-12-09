@@ -2863,3 +2863,114 @@ WARNING: Unmatched cancel notification for request id 3982
 2025.12.08 18:50:36 INFO  time: compiled quicksort_d5c0a6989e in 0.12s[0m
 2025.12.08 18:51:35 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
 2025.12.08 18:51:35 INFO  time: compiled quicksort_d5c0a6989e in 0.13s[0m
+2025.12.08 21:20:02 INFO  Shutting down server[0m
+2025.12.08 21:20:02 INFO  shutting down Metals[0m
+2025.12.08 21:20:02 INFO  Shut down connection with build server.[0m
+2025.12.08 21:20:02 INFO  BSP server: Dec 08, 2025 9:20:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification[0m
+2025.12.08 21:20:02 INFO  BSP server: WARNING: Notification threw an exception: {[0m
+2025.12.08 21:20:02 INFO  BSP server:   "jsonrpc": "2.0",[0m
+2025.12.08 21:20:02 INFO  BSP server:   "method": "build/exit",[0m
+2025.12.08 21:20:02 INFO  BSP server:   "params": null[0m
+2025.12.08 21:20:02 INFO  BSP server: }[0m
+2025.12.08 21:20:02 INFO  BSP server: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.FutureTask.run(FutureTask.java:264)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at java.base@17.0.6/java.lang.Thread.run(Thread.java:833)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at com.oracle.svm.core.thread.PlatformThreads.threadStartRoutine(PlatformThreads.java:775)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at com.oracle.svm.core.posix.thread.PosixPlatformThreads.pthreadStartRoutine(PosixPlatformThreads.java:203)[0m
+2025.12.08 21:20:02 INFO  BSP server: Caused by: java.lang.reflect.InvocationTargetException[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at java.base@17.0.6/java.lang.reflect.Method.invoke(Method.java:568)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	... 13 more[0m
+2025.12.08 21:20:02 INFO  BSP server: Caused by: java.lang.RuntimeException: BSP server not initialized yet[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at scala.sys.package$.error(package.scala:27)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at scala.build.bsp.BloopSession$Reference.get(BloopSession.scala:70)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at scala.build.bsp.BspImpl.$anonfun$11(BspImpl.scala:471)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	at scala.build.bsp.BuildServerProxy.onBuildExit(BuildServerProxy.scala:29)[0m
+2025.12.08 21:20:02 INFO  BSP server: 	... 15 more[0m
+2025.12.08 21:20:02 INFO  BSP server: [0m
+2025.12.08 21:20:02 INFO  Exiting server[0m
+2025.12.09 16:06:08 INFO  Started: Metals version 1.6.4 in folders '/home/drake/Code/Scala/quicksort' for client VSCodium 1.104.3.[0m
+2025.12.09 16:06:08 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2025.12.09 16:06:08 INFO  no build target found for /home/drake/Code/Scala/quicksort/src/lib.sc. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.12.09 16:06:09 INFO  Attempting to connect to the build server...[0m
+2025.12.09 16:06:09 INFO  Running BSP server List(/home/drake/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/drake/Code/Scala/quicksort/.scala-build/ide-options-v2.json, --json-launcher-options, /home/drake/Code/Scala/quicksort/.scala-build/ide-launcher-options.json, --envs-file, /home/drake/Code/Scala/quicksort/.scala-build/ide-envs.json, /home/drake/Code/Scala/quicksort)[0m
+2025.12.09 16:06:09 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/drake/Code/Scala/quicksort/.metals/bsp.trace.json or /home/drake/.cache/metals/bsp.trace.json[0m
+2025.12.09 16:06:10 INFO  BSP server: Starting compilation server[0m
+2025.12.09 16:06:10 INFO  no build target found for /home/drake/Code/Scala/quicksort/src/lib.sc. Using presentation compiler with project's scala-library version: 3.3.6[0m
+Dec 09, 2025 4:06:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+2025.12.09 16:06:10 INFO  no build target found for /home/drake/Code/Scala/quicksort/src/lib.sc. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.12.09 16:06:10 INFO  no build target found for /home/drake/Code/Scala/quicksort/src/lib.sc. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.12.09 16:06:10 INFO  no build target found for /home/drake/Code/Scala/quicksort/src/lib.sc. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.12.09 16:06:11 INFO  time: Connected to build server in 1.77s[0m
+2025.12.09 16:06:11 INFO  Connected to Build server: scala-cli v1.10.1[0m
+2025.12.09 16:06:11 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:06:13 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk/src.zip, /usr/lib/jvm/java-21-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2025.12.09 16:06:13 INFO  time: indexed workspace in 1.81s[0m
+2025.12.09 16:06:14 INFO  time: compiled quicksort_d5c0a6989e in 2.3s[0m
+2025.12.09 16:06:14 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:06:14 INFO  time: compiled quicksort_d5c0a6989e in 0.52s[0m
+2025.12.09 16:06:14 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:06:14 INFO  time: compiled quicksort_d5c0a6989e in 0.36s[0m
+Dec 09, 2025 4:06:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 09, 2025 4:06:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.12.09 16:08:16 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:08:16 INFO  time: compiled quicksort_d5c0a6989e in 0.73s[0m
+2025.12.09 16:08:36 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:08:36 INFO  time: compiled quicksort_d5c0a6989e in 0.19s[0m
+2025.12.09 16:14:45 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:14:45 INFO  time: compiled quicksort_d5c0a6989e in 0.2s[0m
+2025.12.09 16:14:59 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:14:59 INFO  time: compiled quicksort_d5c0a6989e in 0.15s[0m
+Dec 09, 2025 4:17:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1091
+2025.12.09 16:17:46 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:17:46 INFO  time: compiled quicksort_d5c0a6989e in 0.2s[0m
+2025.12.09 16:19:31 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:19:31 INFO  time: compiled quicksort_d5c0a6989e in 0.18s[0m
+2025.12.09 16:19:41 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:19:41 INFO  time: compiled quicksort_d5c0a6989e in 0.14s[0m
+2025.12.09 16:21:04 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:21:04 INFO  time: compiled quicksort_d5c0a6989e in 0.17s[0m
+2025.12.09 16:21:32 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:21:32 INFO  time: compiled quicksort_d5c0a6989e in 0.12s[0m
+2025.12.09 16:22:00 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:22:00 INFO  time: compiled quicksort_d5c0a6989e in 0.12s[0m
+Dec 09, 2025 4:23:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3068
+Dec 09, 2025 4:23:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3219
+2025.12.09 16:23:35 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:23:35 INFO  time: compiled quicksort_d5c0a6989e in 0.16s[0m
+2025.12.09 16:24:18 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:24:18 INFO  time: compiled quicksort_d5c0a6989e in 0.17s[0m
+2025.12.09 16:24:46 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:24:46 INFO  time: compiled quicksort_d5c0a6989e in 0.13s[0m
+2025.12.09 16:25:11 INFO  Created report: Optional[file:///home/drake/Code/Scala/quicksort/.scala-build/quicksort_d5c0a6989e/src_generated/main/src/lib.sc.scala][0m
+2025.12.09 16:25:11 INFO  java.lang.IndexOutOfBoundsException: -1 (full report at: "/home/drake/Code/Scala/quicksort/.metals/.reports/metals-full/2025-12-09/r_compiler-error_16-25-11-280.md")[0m
+2025.12.09 16:25:19 INFO  Created report: Optional[file:///home/drake/Code/Scala/quicksort/.scala-build/quicksort_d5c0a6989e/src_generated/main/src/lib.sc.scala][0m
+2025.12.09 16:25:19 INFO  java.lang.IndexOutOfBoundsException: -1 (full report at: "/home/drake/Code/Scala/quicksort/.metals/.reports/metals-full/2025-12-09/r_compiler-error_16-25-19-531.md")[0m
+2025.12.09 16:25:26 INFO  Created report: Optional[file:///home/drake/Code/Scala/quicksort/.scala-build/quicksort_d5c0a6989e/src_generated/main/src/lib.sc.scala][0m
+2025.12.09 16:25:26 INFO  java.lang.IndexOutOfBoundsException: -1 (full report at: "/home/drake/Code/Scala/quicksort/.metals/.reports/metals-full/2025-12-09/r_compiler-error_16-25-26-807.md")[0m
+2025.12.09 16:25:32 INFO  Created report: Optional[file:///home/drake/Code/Scala/quicksort/.scala-build/quicksort_d5c0a6989e/src_generated/main/src/lib.sc.scala][0m
+2025.12.09 16:25:32 INFO  java.lang.IndexOutOfBoundsException: -1 (full report at: "/home/drake/Code/Scala/quicksort/.metals/.reports/metals-full/2025-12-09/r_compiler-error_16-25-32-652.md")[0m
+2025.12.09 16:25:35 INFO  Created report: Optional[file:///home/drake/Code/Scala/quicksort/.scala-build/quicksort_d5c0a6989e/src_generated/main/src/lib.sc.scala][0m
+2025.12.09 16:25:35 INFO  java.lang.IndexOutOfBoundsException: -1 (full report at: "/home/drake/Code/Scala/quicksort/.metals/.reports/metals-full/2025-12-09/r_compiler-error_16-25-35-566.md")[0m
+2025.12.09 16:25:42 INFO  Created report: Optional[file:///home/drake/Code/Scala/quicksort/.scala-build/quicksort_d5c0a6989e/src_generated/main/src/lib.sc.scala][0m
+2025.12.09 16:25:42 INFO  java.lang.IndexOutOfBoundsException: -1 (full report at: "/home/drake/Code/Scala/quicksort/.metals/.reports/metals-full/2025-12-09/r_compiler-error_16-25-42-467.md")[0m
+2025.12.09 16:25:44 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:25:44 INFO  time: compiled quicksort_d5c0a6989e in 0.16s[0m
+2025.12.09 16:26:12 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:26:12 INFO  time: compiled quicksort_d5c0a6989e in 0.12s[0m
