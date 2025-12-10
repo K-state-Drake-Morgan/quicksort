@@ -5,8 +5,8 @@ import org.sireum._
 def is_sorted(input: ZS): B = {
   Contract (
     Ensures (
-      Res[B] == true __>: ∀(0 until input.size - 1)(i => input(i) < input(i + 1)),
-      Res[B] == false __>: !(∀(0 until input.size - 1)(i => input(i) < input(i + 1))),
+      Res[B] == true __>: ∀(0 until input.size - 1)(i => input(i) <= input(i + 1)),
+      Res[B] == false __>: !(∀(0 until input.size - 1)(i => input(i) <= input(i + 1))),
     )
   )
 

@@ -3040,3 +3040,5 @@ WARNING: Unmatched cancel notification for request id 1349
 2025.12.10 16:10:10 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/drake/Code/Scala/quicksort/.metals/.reports/metals-full/2025-12-10/r_empty-definition_(quicksort_5fd5c0a6989e)_16-10-10-706.md")[0m
 2025.12.10 16:10:14 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
 2025.12.10 16:10:14 INFO  time: compiled quicksort_d5c0a6989e in 0.18s[0m
+2025.12.10 16:11:34 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 16:11:34 INFO  time: compiled quicksort_d5c0a6989e in 0.18s[0m
