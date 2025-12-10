@@ -12,9 +12,16 @@ def is_sorted(input: ZS): B = {
 
   var index: Z = 0;
   while (index < input.size - 1) {
+    Invariant (
+      Modifies (
+        index
+      ),
+      ∀(0 until index - 1)(i => (i >= 0 && i + 1 < input.size) __>: input(i) < input(i + 1))
+    )
     if (input(index) > input(index + 1)) {
       return false;
     }
+    index = index + 1;
   }
   return true;
 }
@@ -46,14 +53,13 @@ def quicksort_part(input: ZS, start: Z, len: Z): Unit = {
   Contract (
     Requires (
       start >= 0,
-      start < input.size,
       start + len <= input.size
     ),
     Modifies (
       input
     ),
     Ensures (
-      ∀(start until start + len - 1)(i => i + 1 < input.size && input(i) <= input(i + 1))
+      ∀(start until start + len - 1)(i => input(i) <= input(i + 1))
     )
   )
   if (len <= 1)
@@ -80,6 +86,8 @@ def quicksort_part(input: ZS, start: Z, len: Z): Unit = {
         segmentE < input.size,
         segmentG < input.size,
         segmentL < input.size,
+        segmentG <= start + len - 1,
+        segmentE <= start + len - 1,
         ∀(segmentE until start + len - 1) (i => i < input.size && input(i) >= pivot)
     )
       if (input(segmentE) < pivot)
@@ -107,13 +115,14 @@ def quicksort(input: ZS): Unit = {
       input
     ),
     Ensures(
-      ∀(0 until input.size - 1)(i => (input(i) < input(i + 1))),
+      ∀(0 until input.size - 1)(i => input(i) <= input(i + 1)),
       input.size == In(input).size
     )
+
   )
 
   if (input.size > 1) {
-    quicksort_part(input, 0, input.size )
+    quicksort_part(input, 0, input.size)
   }
 }
 

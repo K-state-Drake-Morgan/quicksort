@@ -2974,3 +2974,69 @@ WARNING: Unmatched cancel notification for request id 3219
 2025.12.09 16:25:44 INFO  time: compiled quicksort_d5c0a6989e in 0.16s[0m
 2025.12.09 16:26:12 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
 2025.12.09 16:26:12 INFO  time: compiled quicksort_d5c0a6989e in 0.12s[0m
+2025.12.09 16:27:29 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:27:29 INFO  time: compiled quicksort_d5c0a6989e in 0.17s[0m
+2025.12.09 16:28:04 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:28:04 INFO  time: compiled quicksort_d5c0a6989e in 0.16s[0m
+2025.12.09 16:28:56 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:28:56 INFO  time: compiled quicksort_d5c0a6989e in 0.16s[0m
+2025.12.09 16:29:19 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.09 16:29:19 INFO  time: compiled quicksort_d5c0a6989e in 0.11s[0m
+2025.12.09 18:06:18 INFO  Shutting down server[0m
+2025.12.09 18:06:18 INFO  shutting down Metals[0m
+2025.12.09 18:06:18 INFO  Shut down connection with build server.[0m
+2025.12.09 18:06:18 INFO  Exiting server[0m
+2025.12.10 15:56:33 INFO  Started: Metals version 1.6.4 in folders '/home/drake/Code/Scala/quicksort' for client VSCodium 1.104.3.[0m
+2025.12.10 15:56:33 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2025.12.10 15:56:33 INFO  no build target found for /home/drake/Code/Scala/quicksort/src/lib.sc. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.12.10 15:56:34 INFO  Attempting to connect to the build server...[0m
+2025.12.10 15:56:34 INFO  Running BSP server List(/home/drake/.local/share/coursier/bin/.scala-cli.aux, bsp, --json-options, /home/drake/Code/Scala/quicksort/.scala-build/ide-options-v2.json, --json-launcher-options, /home/drake/Code/Scala/quicksort/.scala-build/ide-launcher-options.json, --envs-file, /home/drake/Code/Scala/quicksort/.scala-build/ide-envs.json, /home/drake/Code/Scala/quicksort)[0m
+2025.12.10 15:56:34 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/drake/Code/Scala/quicksort/.metals/bsp.trace.json or /home/drake/.cache/metals/bsp.trace.json[0m
+2025.12.10 15:56:34 INFO  BSP server: Starting compilation server[0m
+Dec 10, 2025 3:56:35 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.12.10 15:56:35 INFO  no build target found for /home/drake/Code/Scala/quicksort/src/lib.sc. Using presentation compiler with project's scala-library version: 3.3.6[0m
+2025.12.10 15:56:36 INFO  time: Connected to build server in 2.02s[0m
+2025.12.10 15:56:35 INFO  Connected to Build server: scala-cli v1.10.1[0m
+2025.12.10 15:56:36 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 15:56:37 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk/src.zip, /usr/lib/jvm/java-21-openjdk/lib/src.zip. Java symbols will not be available.[0m
+2025.12.10 15:56:37 INFO  time: indexed workspace in 1.62s[0m
+2025.12.10 15:56:39 INFO  time: compiled quicksort_d5c0a6989e in 2.36s[0m
+2025.12.10 15:56:39 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 15:56:39 INFO  time: compiled quicksort_d5c0a6989e in 0.66s[0m
+2025.12.10 15:56:39 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 15:56:40 INFO  time: compiled quicksort_d5c0a6989e in 0.41s[0m
+Dec 10, 2025 3:56:50 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Dec 10, 2025 3:56:51 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2025.12.10 15:59:37 INFO  Created report: Optional[file:///home/drake/Code/Scala/quicksort/src/lib.sc][0m
+2025.12.10 15:59:37 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/drake/Code/Scala/quicksort/.metals/.reports/metals-full/2025-12-10/r_empty-definition_(quicksort_5fd5c0a6989e)_15-59-37-062.md")[0m
+2025.12.10 15:59:39 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 15:59:39 INFO  time: compiled quicksort_d5c0a6989e in 0.81s[0m
+Dec 10, 2025 4:01:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 581
+2025.12.10 16:01:22 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 16:01:22 INFO  time: compiled quicksort_d5c0a6989e in 0.27s[0m
+2025.12.10 16:02:14 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 16:02:14 INFO  time: compiled quicksort_d5c0a6989e in 0.21s[0m
+2025.12.10 16:02:57 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 16:02:57 INFO  time: compiled quicksort_d5c0a6989e in 0.21s[0m
+2025.12.10 16:03:05 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 16:03:05 INFO  time: compiled quicksort_d5c0a6989e in 0.17s[0m
+2025.12.10 16:04:06 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 16:04:06 INFO  time: compiled quicksort_d5c0a6989e in 0.18s[0m
+Dec 10, 2025 4:06:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1025
+Dec 10, 2025 4:06:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1277
+2025.12.10 16:06:49 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 16:06:49 INFO  time: compiled quicksort_d5c0a6989e in 0.19s[0m
+Dec 10, 2025 4:07:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1349
+2025.12.10 16:08:18 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 16:08:18 INFO  time: compiled quicksort_d5c0a6989e in 0.17s[0m
+2025.12.10 16:10:10 INFO  Created report: Optional[file:///home/drake/Code/Scala/quicksort/src/lib.sc][0m
+2025.12.10 16:10:10 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/drake/Code/Scala/quicksort/.metals/.reports/metals-full/2025-12-10/r_empty-definition_(quicksort_5fd5c0a6989e)_16-10-10-706.md")[0m
+2025.12.10 16:10:14 INFO  compiling quicksort_d5c0a6989e (1 scala source)[0m
+2025.12.10 16:10:14 INFO  time: compiled quicksort_d5c0a6989e in 0.18s[0m
