@@ -1,3 +1,23 @@
+error id: 7FB8F92DE54DE5D94621BBB186345C7D
+file://<WORKSPACE>/.scala-build/quicksort_d5c0a6989e/src_generated/main/src/lib.sc.scala
+### java.lang.IndexOutOfBoundsException: -1
+
+occurred in the presentation compiler.
+
+
+
+action parameters:
+offset: 4212
+uri: file://<WORKSPACE>/.scala-build/quicksort_d5c0a6989e/src_generated/main/src/lib.sc.scala
+text:
+```scala
+package src
+
+
+final class lib$_ {
+def args = lib_sc.args$
+def scriptPath = """src/lib.sc"""
+/*<script>*/
 // #Sireum #Logika
 
 import org.sireum._
@@ -193,15 +213,39 @@ assert(is_sorted(fortynine))
 
 // duplicate
 var duplicate = ZS(6,6,6,6,6,6,5,5,5,5,5,4,4,4,4,3,3,3,2,2,1)
-quicksort(duplicate)
-assert(is_sorted(duplicate))
+quicksort(@@)}
+```
 
-// duplicate odd
-var duplicate_odd = ZS(5,7,7,2,3)
-quicksort(duplicate_odd)
-assert(is_sorted(duplicate_odd))
 
-// duplicate even
-var duplicate_even = ZS(8, 4, 2, 4, 0, 5)
-quicksort(duplicate_even)
-assert(is_sorted(duplicate_even))
+presentation compiler configuration:
+Scala version: 3.7.4-bin-nonbootstrapped
+Classpath:
+<WORKSPACE>/.scala-build/quicksort_d5c0a6989e/classes/main [exists ], <HOME>/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.7.4/scala3-library_3-3.7.4.jar [exists ], <HOME>/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.16/scala-library-2.13.16.jar [exists ], <HOME>/.cache/coursier/v1/https/repo1.maven.org/maven2/com/sourcegraph/semanticdb-javac/0.10.0/semanticdb-javac-0.10.0.jar [exists ], <WORKSPACE>/.scala-build/quicksort_d5c0a6989e/classes/main/META-INF/best-effort [missing ]
+Options:
+-Xsemanticdb -sourceroot <WORKSPACE> -Ywith-best-effort-tasty
+
+
+
+
+#### Error stacktrace:
+
+```
+scala.collection.LinearSeqOps.apply(LinearSeq.scala:129)
+	scala.collection.LinearSeqOps.apply$(LinearSeq.scala:128)
+	scala.collection.immutable.List.apply(List.scala:79)
+	dotty.tools.dotc.util.Signatures$.applyCallInfo(Signatures.scala:244)
+	dotty.tools.dotc.util.Signatures$.computeSignatureHelp(Signatures.scala:101)
+	dotty.tools.dotc.util.Signatures$.signatureHelp(Signatures.scala:88)
+	dotty.tools.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:46)
+	dotty.tools.pc.ScalaPresentationCompiler.signatureHelp$$anonfun$1(ScalaPresentationCompiler.scala:498)
+	scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:149)
+	scala.meta.internal.pc.CompilerAccess.withNonInterruptableCompiler$$anonfun$1(CompilerAccess.scala:133)
+	scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:210)
+	scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	java.base/java.lang.Thread.run(Thread.java:1583)
+```
+#### Short summary: 
+
+java.lang.IndexOutOfBoundsException: -1

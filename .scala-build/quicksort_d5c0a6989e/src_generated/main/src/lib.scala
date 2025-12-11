@@ -197,6 +197,21 @@ var fortynine = ZS(
 )
 quicksort(fortynine)
 assert(is_sorted(fortynine))
+
+// duplicate
+var duplicate = ZS(6,6,6,6,6,6,5,5,5,5,5,4,4,4,4,3,3,3,2,2,1)
+quicksort(duplicate)
+assert(is_sorted(duplicate))
+
+// duplicate odd
+var duplicate_odd = ZS(5,7,7,2,3)
+quicksort(duplicate_odd)
+assert(is_sorted(duplicate_odd))
+
+// duplicate even
+var duplicate_even = ZS(8, 4, 2, 4, 0, 5)
+quicksort(duplicate_even)
+assert(is_sorted(duplicate_even))
 /*</script>*/ /*<generated>*//*</generated>*/
 }
 
